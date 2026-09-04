@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+header {
+  background: #222;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 8px;
+}
+
+header p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+main {
+  padding: 25px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+#status {
+  margin-left: auto;
+  color: #555;
+}
+
+.board {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  overflow-x: auto;
+}
+
+.column {
+  background: #e5e7eb;
+  border-radius: 10px;
+  width: 300px;
+  min-width: 300px;
+  padding: 15px;
+}
+
+.column h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.cards {
+  min-height: 100px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  cursor: grab;
+}
+
+.card:active {
+  cursor: grabbing;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  color: #666;
+  font-size: 14px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.card-actions button {
+  font-size: 12px;
+  padding: 6px 9px;
+}
+
+.delete {
+  background: #dc2626;
+}
+
+.drop-zone {
+  min-height: 80px;
+}
+
+.column-header{
+    display: flex;
+    justify-content:space-between;
+}
+
+.add-card-inColumn{
+    width:100%;
+}

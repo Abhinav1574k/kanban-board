@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanban Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Kanban Board</h1>
+    <p>Task management with backend persistence</p>
+  </header>
+
+  <main>
+    <section class="toolbar">
+      <button onclick="addColumn()">+ Add Column</button>
+      <button onclick="addCard()">+ Add Card</button>
+      <span id="status"></span>
+    </section>
+
+    <section id="board" class="board"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
